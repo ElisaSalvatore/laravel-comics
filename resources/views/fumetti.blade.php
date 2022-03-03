@@ -1,4 +1,4 @@
-@section('pageTitle', 'Characters')
+@section('pageTitle', 'Comics')
 @extends('layouts.default')
 
 @section('sectionTitle', 'Fumetti')
