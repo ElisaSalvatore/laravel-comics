@@ -1,0 +1,133 @@
+.ft-top {
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 30px;
+
+    ul {
+        display: flex;
+        
+        li {
+            display: flex;
+            align-items: center;
+            text-transform: uppercase;
+            margin-right: 35px;
+            color: #fff;
+            font-weight: 300;
+        }
+    
+        li > img {
+            width: 45px;
+            height: 55px;
+            margin-right: 10px ;
+        }
+    }
+}
+
+.ft-center {
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    height: 550px;
+    color: #fff;
+    background: url("/images/footer-bg.jpg") no-repeat;
+    background-size: cover;
+    
+    .ft-center-left {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 400px;
+        height: 400px;
+        padding-top: 50px;
+        
+        ul {
+            display: flex;
+            flex-direction: column;
+            height: 280px;
+            padding: 0 15px;
+
+            &:nth-child(4) {
+                height: 150px;
+            }
+        }
+
+        h5 {
+            margin-bottom: 10px;
+        }
+
+        li {
+            list-style: none;
+            font-size: 10px;
+            font-weight: 300;
+            margin: 8px 0;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+
+        .paragraph {
+            padding: 0 15px;
+            font-size: 8px;
+            color: #fff;
+            width: 400px;
+
+            span {
+                cursor: pointer;
+            }
+        }
+    }
+
+    .ft-center-right {
+       overflow-y: hidden;
+       
+        img {
+            padding-top: 20px;
+            width: 650px;
+            height: 650px;
+        }
+    }
+}
+
+.ft-bottom {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    background-color: #333;
+
+    button {
+        padding: 10px;
+        background-color: #333;
+        border: 2px solid #0d6efd;
+        color: #fff;
+
+        &:hover {
+            background-color: #0d6efd;
+        }
+    }
+
+    .follow-us{
+        display: flex;
+        align-items: center;
+        color: #0d6efd;
+        font-weight: 700;
+
+        img {
+            width: 28px;
+            height: 28px;
+            margin: 5px;
+
+            &:hover {
+                background-color: #fff;
+                border-radius: 50px;
+            }
+        }
+
+        img:first-child {
+            margin-left: 20px;
+        }
+    }
+}

@@ -12,22 +12,21 @@
 </head>
 <body>
     {{-- header con navbar --}}
-    <header>
-        <div class="h-50 bg-primary text-white">
-            <div class="container d-flex justify-content-end">
-                <div class="py-1 px-4">DC POWER TM VICA R</div>
-                <div class="py-1 px-4">ADDITIONAL DC SITES ></div>
-            </div>
-        </div>
-        
+    <header> 
         @include("partials.navbar")
+
+        <h1 class="p-4 bg-primary text-white">@yield('sectionTitle')</h1>
     </header>
 
-    <main class="bg-danger">
+    {{-- main --}}
+
+    <main class="bg-dark">
         @yield('mainContent')
     </main>
 
     {{-- footer --}}
-    @include("partials.footer")
+    <footer>
+        @include("partials.footer")
+    </footer>
 </body>
 </html>

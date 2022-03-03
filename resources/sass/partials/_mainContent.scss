@@ -1,0 +1,75 @@
+// ----- JUMBOTRON
+.jumbo {
+    width: 100vw;
+    height: 80vh;
+    background: url("/images/jumbotron.jpg") no-repeat;
+    background-size: cover;
+    color:#fff;
+    text-align: center;
+    line-height: 80vh;
+}
+
+.container-cards {
+    margin: 0 auto;
+    width: 1200px;
+    padding-bottom: 20px;
+
+    .current-series {
+        width: 220px;
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+        margin-top: -30px;
+        margin-left: 30px;
+        font-size: 22px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    .cards-box {
+        display: flex;
+        width: 100%;
+
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            .card-comic {
+                width: calc(100% / 6);
+                color: #fff;
+                font-size: 13px;
+                text-transform: uppercase;   
+                list-style: none;
+
+                > img {
+                    width: 200px;
+                    height: 200px;
+                    padding: 10px;
+                    object-position: top;
+                    object-fit: cover;
+                }
+            }
+        }
+    }   
+
+    button {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 180px;
+        height: 35px;
+        background-color: #0d6efd;
+        color: #fff;
+        border: none;
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+    
+        &:hover {
+            background-color: #fff;
+            color: #0d6efd;
+        }
+    }    
+}
